@@ -1,0 +1,43 @@
+{{define "User"}}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>User</title>
+        <link rel="stylesheet" href="/static/css/style2.css"/>
+    </head>
+<body >
+    <div id="info">
+        <div id="debut">    
+        <h2>Renseigner vos données</h2>
+    </div>
+        <div id="infox">
+            <form action="/user/treatment" method="post">
+            <label for="Prenom">Prenom</label><br/>
+            <input type="text" class="form" name="Prenom" required><br/>
+
+            <label for="Nom">Nom</label><br/>
+            <input type="text" class="form" name="Nom" required><br/>
+
+            <label for="Datedenaissance">Date de Naissance</label><br/>
+            <input type="date" name="Datedenaissance" class="form"><br/>
+
+            <label for="pays">Sexe</label><br/>
+            <select id="pays" class="form" name="Sexe">
+                <optgroup label="Genre">
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+                <option value="Helicoptere de combat">Helicoptere de combat</option>
+                <option value="ntm" selected>choisir</option>
+                
+                </optgroup>
+                </select><br>
+        </div>
+        <div id="valider">
+        <input class="form" type="submit" value="Valider">
+        </div>
+    </form>
+    </div>
+</body>
+</html>
+{{end}}

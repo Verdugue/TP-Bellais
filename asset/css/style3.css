@@ -1,0 +1,40 @@
+body{
+
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    background-color: #202020;
+    top:10px;
+
+}
+    
+#tout {    
+    border-width:5px;
+    height:350px;
+    width: 300px;
+    flex-direction:column;
+    border-radius: 5px;
+    border-style: double;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+    
+#titre {
+    display:flex;
+    justify-content:center;
+       
+}
+    
+#donnees {
+
+    flex-direction:column;
+    height:260px;
+    display:flex;
+    margin-left:10px;
+
+}
+
+    

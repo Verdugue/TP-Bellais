@@ -1,0 +1,35 @@
+{{define "index"}}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>PROMO</title>
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+<body>
+<div class="main">
+    <h1>{{.NomPromo}}</h1>
+		<p>Filiere: {{.Filiere}}</p>
+		<p>Niveau: {{.Niveau}}</p>
+		<p>Nombre d'étudiants: {{len .NbEtudiant}}</p>
+	
+	<h2>Liste des etudiants</h2>
+	{{range .NbEtudiant}}
+	<div class="second">
+		<div class="etud">
+				<li>Nom: {{.Nom}} Prenom: {{.Prenom}}</li>
+				<li>Age: {{.Age}}</li>
+		</div>
+		<div class="img">
+				{{if eq .Genre "Male"}}
+					<img src="/static/image/homme.png" alt="homme"/>
+				{{else}}
+					<img src="/static/image/female-svgrepo-com" alt="femme"/>
+				{{end}}
+		</div>
+	</div>
+	{{end}}
+</div>
+</body>
+</html>
+{{end}}

@@ -1,0 +1,23 @@
+.second {
+    border: solid black 5px;
+    border-radius: 10px 10px 10px 10px;
+    padding:10px;
+    display: flex;
+    right:40px;
+    background-color: grey;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.main{
+    border: solid grey 1px;
+    background-color: grey;
+    padding: 1px;
+    width:50%;
+    
+}
+
+img{
+    flex-direction: column;
+    width: 80px;
+}

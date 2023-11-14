@@ -1,0 +1,54 @@
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    top:10px;
+
+}
+
+#info {
+
+    border-width:5px;
+    height:350px;
+    width: 300px;
+    flex-direction:column;
+    border-radius: 5px;
+    border-style: double;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+#debut {
+    text-align: top;
+    display:flex;
+    justify-content:center;
+    
+}
+
+#infox {
+    
+    display:flex;
+    justify-content:center;
+    margin-bottom:5px;
+
+
+}
+
+.form {
+    
+    display:flex;
+    border-radius:5px;
+
+    
+}
+
+#valider {
+    
+    display:flex;
+    justify-content:center;
+
+}

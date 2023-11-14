@@ -1,0 +1,26 @@
+{{define "UserData"}}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>User Data</title>
+    <link rel="stylesheet" href="/static/css/style3.css">
+</head>
+<body>
+    <div id="tout"> 
+        <div id="titre">
+            <h2>Données de l'utilisateur :</h2>
+        </div>
+        <div id="donnees">  
+            <p>Nom : {{.Nom}}</p>
+            <p>Prénom : {{.Prenom}}</p>
+            <p>Date de Naissance : {{.Datedenaissance}}</p>
+            <p>Sexe : {{.Sexe}}</p>
+        <div>
+    </div>
+</body>
+
+
+
+</html>
+{{end}}
